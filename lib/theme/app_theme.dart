@@ -111,7 +111,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
       ),
-      inputDecorationTheme: InputDecorationThemeData(
+      inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: AppColors.surface,
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
