@@ -75,26 +75,26 @@ class _Body extends StatelessWidget {
       );
     }
 
-    if (projects.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.inventory_2_outlined, color: AppColors.textMuted, size: 32),
-            const SizedBox(height: 12),
-            const Text(
-              'No projects yet',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
-            ),
-            const SizedBox(height: 4),
-            const Text(
-              'Start Editing to create your first one.',
-              style: TextStyle(color: AppColors.textMuted, fontSize: 12.5),
-            ),
-          ],
+if (projects.isEmpty) {
+  return const Center(
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(Icons.inventory_2_outlined, color: AppColors.textMuted, size: 32),
+        SizedBox(height: 12),
+        Text(
+          'No projects yet',
+          style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
         ),
-      );
-    }
+        SizedBox(height: 4),
+        Text(
+          'Start Editing to create your first one.',
+          style: TextStyle(color: AppColors.textMuted, fontSize: 12.5),
+        ),
+      ],
+    ),
+  );
+}
 
     return ListView.separated(
       itemCount: projects.length,
