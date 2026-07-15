@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Needed for hot reload / the Dart VM service in debug builds only;
+         intentionally excluded from the main manifest so release builds
+         don't request network access they don't otherwise need. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

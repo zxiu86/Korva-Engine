@@ -1,0 +1,40 @@
+name: korva_engine
+description: "Korva Engine — mobile companion for starting and managing creation projects."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Requests / checks the Android "All files access" permission needed to
+  # create and manage project folders in shared storage on API 30+.
+  permission_handler: ^11.3.1
+
+  # Directory/file picker (Storage Access Framework under the hood) used
+  # for "Change Path" and "Open Project". Pinned below the 12.x line,
+  # which replaced the FilePicker.platform.* API with static methods.
+  file_picker: ^10.3.7
+
+  # Resolves platform storage locations (fallback save directory).
+  path_provider: ^2.1.4
+
+  # Path joining/formatting utilities.
+  path: ^1.9.0
+
+  # Date formatting for "Last Modified".
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
